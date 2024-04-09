@@ -1,4 +1,4 @@
-#!/home/farid-rojas/app_electiva/loginservice/venv/bin/python3
+#!/data/data/com.termux/files/home/Electiva/app_electiva/loginservice/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

@@ -33,7 +33,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/home/farid-rojas/app_electiva/loginservice/venv"
+set -gx VIRTUAL_ENV "/data/data/com.termux/files/home/Electiva/app_electiva/loginservice/venv"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
