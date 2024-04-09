@@ -1,4 +1,5 @@
-venv
-.env
 /gateway/.env
 /gateway/venv
+/loginservice/.env
+/loginservice/ven
+/loginservice/src/__pycache__
