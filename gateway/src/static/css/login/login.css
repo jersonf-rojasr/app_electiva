@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 ;
+}
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../../img/login/kargoru_backgroup.jpeg");
+    background-repeat: repeat;
+    background-size: cover;
+}
+.contenedor{
+    border-radius: 25px;
+    display: flex;
+    width: 300px;
+    height: 450px;
+    background-color:#2d9acf;
+    opacity: 0.95;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}   
+.input_lg{
+    background-color: #2d9acf;
+    padding-left: 10px;
+    color: white;
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+    border-bottom: white 2px solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    &:focus{
+        background-color: none;
+    }
+    &:valid{
+        background-color: none;
+    }
+
+}
+::placeholder { color: white; }
+
+.login{
+    background-color: #ffffff;
+    color: #2d9acf;
+    font-size: 20px;
+    height: 40px;
+    width: 90%;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+.login:hover {
+    background-color: rgb(79, 207, 79);
+    opacity: 1;
+}
+
+.advertencia{
+    display: flex;
+    background-color: #ffc7ce;
+    color: #ce6268;
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_lg{
+    width: 100%;
+    height: 100px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/css/home/home.css">
+    <title>Menú con opciones y logout</title>
+</head>
+<body>
+    <div class="contenedor1">
+        <div class="contenedor1-1">
+            <div class="contenedor1-1-1">
+                <a>{{ username[0] }}</a>
+                <div class="flecha"></div>
+            </div>
+            <ol class="contenedor1-1-2">
+                <li><a href="">Configuraciones</a></li>
+                <li><a href="{{ url_for('gateway') }}">Cerrar Sesion</a></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario para enviar datos a Flask</title>
-</head>
+    <link rel="stylesheet" href="../static/css/login/login.css">
 <body>
-    <h1>Formulario para enviar datos a login</h1>
-    <form action="" method="POST">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre"><br><br>
-
-        <label for="password">Edad:</label>
-        <input type="number" id="password" name="password"><br><br>
-
-        <button type="submit">Enviar</button>
+    <form class=contenedor action="" method="POST">
+        {% block content %}
+            {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <spam class="advertencia">{{message}}</spam>
+                    {% endfor %}
+                {%endif%}
+            {% endwith %}
+        {% endblock %}
+        <input class="input_lg" type="text" id="nombre" name="nombre" placeholder="Usuario"><br><br>
+        <input class="input_lg" type="password" id="password" name="password" placeholder="Contraseña"><br><br>
+        <button type="submit" class="login">Enviar</button>
     </form>
 </body>
 </html>
