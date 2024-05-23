@@ -7,3 +7,6 @@ def encryp_pass(password):
 
 def verify_pass(stored_hash, password):
     return bcrypt.checkpw(password.encode('UTF-8'),stored_hash)
+
+
+print(encryp_pass("Pruebas@2024!"))

@@ -1,0 +1,4 @@
+FROM mysql
+ENV MYSQL_ROOT_PASSWORD=Pruebas@2024
+COPY ./app_electiva_login.sql /docker-entrypoint-initdb.d/
+COPY ./my.cnf /etc/mysql/conf.d/my.cnf

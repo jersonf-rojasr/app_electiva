@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  logindb:
+    container_name: logindb
+    build: ./loginDB
+    ports:
+      - "3306:3306"
+
+  operationdb:
+      container_name: operationdb
+      build: ./operationsDB
+      ports:
+        - "3307:3307"
+
+  gateway:
+    container_name: gateway
+    build: ./gateway
+    ports:
+      - "5000:5000"
+
+  login_service:
+    container_name: loginservice
+    build: ./loginservice
+    ports:
+      - "5100:5100"
+    depends_on:
+      - logindb
+
+  operation_service:
+    container_name: operationsservice
+    build: ./operationsservice
+    ports:
+      - "5200:5200"
+    depends_on:
+      - operationdb
+
+volumes:
+  db_data:

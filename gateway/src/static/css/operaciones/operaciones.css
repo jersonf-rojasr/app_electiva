@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+h1{
+    text-align: center;
+}
+section{
+    background-color:#2d9acf;;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+form{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: column;
+    gap: 25px;
+}
+.operacionesContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.operacion{
+    display: flex;
+    gap: 10px;
+}
+.opciones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.advertencia{
+    display: flex;
+    background-color: #41ca0b;
+    color: white;
+    font-size: 20px;
+    height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+}
